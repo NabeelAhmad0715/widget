@@ -9,7 +9,7 @@ var displayTooltip = async (iframeWidget) => {
   modalPopup.width = '360';
   modalPopup.height = '180';
   modalPopup.sandbox =
-    '';
+    'allow-same-origin allow-scripts allow-popups allow-forms';
   modalPopup.frameBorder = 0;
   modalPopup.style =
     'right: 20px !important;\nbottom: 100px;\nposition: fixed !important; \n z-index: 99999999999 !important; \n inset: auto 14px 66px auto !important; \n margin:auto !important';
@@ -21,7 +21,7 @@ var displayTooltip = async (iframeWidget) => {
   iframeButton.width = '68';
   iframeButton.height = '68';
   iframeButton.sandbox =
-    '';
+    'allow-same-origin allow-scripts allow-popups allow-forms';
   iframeButton.frameBorder = 0;
   iframeButton.style =
     'position: fixed !important; \n z-index: 99999999999 !important; \n inset: auto 10px 0px auto !important; \n margin:auto !important';
@@ -121,7 +121,7 @@ var injectWidget = async (opts) => {
   iframe.setAttribute('toggle', toggle);
   iframe.setAttribute('allow', 'microphone');
   iframe.setAttribute('class', 'd-none');
-  iframe.sandbox = '';
+  iframe.sandbox = 'allow-same-origin allow-scripts allow-popups allow-forms';
   iframe.src = chatUrl;
   iframe.width = opts.width ? opts.width : '350';
   iframe.height = opts.height ? opts.height : '690';
