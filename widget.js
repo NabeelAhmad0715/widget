@@ -1,7 +1,7 @@
 var IFRAME_ID = 'injectWidget';
 var TOOLTIP_STATE_KEY = '__prisme_tooltip';
 var toggle = false;
-var chatUrl = 'http://localhost:3000';
+var chatUrl = 'https://widget-invocom.invo.zone';
 var displayTooltip = async (iframeWidget) => {
   var modalPopup = document.createElement('iframe');
   modalPopup.setAttribute('id', 'message-frame');
